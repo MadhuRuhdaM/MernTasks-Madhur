@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <style>
+        table {
+            width: 70%; /* Make the table fill the available width */
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0px; /* Add some padding for better spacing */
+            border: 2px solid #000000; /* Add borders for better visualization */
+        }
+
+        input[type="text"], input[type="email"], input[type="password"],input[type="number"],input[type="tel"],input[type="option"] {
+            width: 100%; /* Make the input elements fill the entire column */
+            box-sizing: border-box; /* Include padding and border in the width */
+            margin: 0; /* Remove margins */
+            padding: 10px; /* Add padding for spacing inside the input */
+        }
+        textarea {
+            width: 100%; /* Make the textarea fill the entire column */
+            box-sizing: border-box; /* Include padding and border in the width */
+            resize: vertical; /* Allow vertical resizing */
+        }
+        select {
+            width: 100%; /* Make the select element fill the entire column */
+        }
+        tr td:first-child {
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        .checkbox-container {
+            margin-right: 20px; /* Adjust the margin to control the space between checkboxes */
+        }
+        .checkbox-container1 {
+            display: inline-block;
+            margin-right: 20px;
+            margin-left: 10px; /* Adjust the margin to control the space between checkboxes */
+        }
+        .beechme{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center"> <font color="blue"> Registration Form</font> </h1>
+    <form>
+    <div>
+    <table border="1" width="40%" height="600px" align="center" >
+        <tr>
+            <td>First Name</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr>
+            <td>Re-enter Password</td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr >
+            <td>Gender:</td>
+            <th align="left">
+            <input type="radio" name="gender">Male <br><hr>
+            <input type="radio" name="gender">Female
+            </th>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number"/></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel"/></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="Address" rows="7"required></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                    <select>
+                        <option></option>
+                        <option>Bengal</option>
+                        <option>UP Bihar</option>
+                        <option>Marathaa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select>
+                        <option>Choose your country</option>
+                        <option>India</option>
+                        <option>UP Bihar</option>
+                        <option>Marathaa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages Known</td>
+                <td>
+                    <label class="checkbox-container"><input type="checkbox" name="Hindi" value="Hindi" >English</label>
+                    <label class="checkbox-container"><input type="checkbox" name="Hindi" value="Hindi">Kannada</label>
+                    <label class="checkbox-container"><input type="checkbox" name="Hindi" value="Hindi">Telugu</label>
+                    <label class="checkbox-container"><input type="checkbox" name="Hindi" value="Hindi">Hindi</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label class="checkbox-container1"><input type="checkbox" name="Hindi" value="Hindi" >Hereby I declare all the given details are true</label></td>
+            </tr>
+            <tr align="right">
+                <td colspan="2"><label>Log in to <a href="https://drive.google.com/drive/folders/1LvFSzp4FnE5cmxpI6DZY5HAVcQ5RP9QB">Ethnus</a>website</label></td>
+            </tr>
+            
+    </table>
+    <div class="beechme"><button type="submit">Register</button></div>
+    
+</div>
+</form>
+</body>
+</html>
